@@ -3,3 +3,6 @@ data
 write
 .ipynb_checkpoints
 cache
+
+raw
+analyzed
