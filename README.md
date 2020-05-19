@@ -1,13 +1,13 @@
 # Using `scanpy` and `besca` to analyse single-cell sequencing data
 
-Jitao David Zhang, 07.05.2020
+[Jitao David Zhang](mailto:jitao_david.zhang@roche.com), 07.05.2020
 
 ## Background
 
-In this tutorial, we explore how to use the software `scanpy` and `besca` to
-analyse single-cell sequencing data.
+This repository helps you start using two Python packages,  `scanpy` and
+`besca`, to analyse single-cell sequencing data.
 
-`scanpy` is a python library that provides
+`scanpy` is a Python library that provides
 data structure and functions to analyse single-cell sequencing data. It is
 developed by the Fabian Theis lab. Its source code is available on GitHub
 [theislab/scanpy](https://github.com/theislab/scanpy), and the documentation is
@@ -15,13 +15,26 @@ available at [readthedocs](https://scanpy.readthedocs.io/).
 
 `besca` stands for *BEDA's single-cell sequencing analysis*. It is built on the
 top of scanpy and offers additional useful data structures and python functions.
+It is developed by the Bioinformatics and Exploratory Data Analysis (BEDA) team
+at Roche Pharma Research and Early Development.
 
-In this tutorial,  we go through the basic analysis single-cell data with both
-scanpy and besca.
+We go through the basic analysis single-cell data with both `scanpy` and `besca`.
+
+* [scanpy-tutorial-3kPBMC.ipynb](./scanpy-tutorial-3kPBMC.ipynb) shows how to
+    analyse a PBMC dataset with Scanpy, following the tutorial of Scanpy. You
+    probably want to start with this to learn the basics of Scanpy.
+* [besca-workflow.ipynb](./besca-workflow.ipynb) is a guided tour of the
+  standard workflow of besca. It complements the standard scanpy workflow by
+  additional QC plots, integrated batch correction, and file exports that adhere
+  to the FAIR (findable, accessible, interoperable, and reusable) principle.
 
 ## Install scanpy and besca
 
-Due to a precompiled binary file, `besca` only runs on linux 64bit systems.
+### Requisite
+
+Due to a pre-compiled binary file, `besca` only runs on linux 64bit systems.
+
+### Installation
 
 ```bash
 pip install scanpy[louvain]
@@ -38,4 +51,6 @@ pip show besca | grep Location | cut -f 2 -d ":" | \
 If you encounter problems with the installation of besca, try using conda, or
 cloning the GitHub repository from GitHub
 [bedapubc/besca](https://github.com/bedapubc/besca) and
-install it locally. If it still does not work, please report an issue.
+install it locally.
+
+If it still does not work, please report an issue.
