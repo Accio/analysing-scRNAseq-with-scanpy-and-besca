@@ -1,4 +1,4 @@
-# Using `scanpy` and `besca` to analyse single-cell sequencing data
+# Tutorials of ssing `scanpy` and `besca` to analyse single-cell sequencing data
 
 [Jitao David Zhang](mailto:jitao_david.zhang@roche.com), 07.05.2020
 
